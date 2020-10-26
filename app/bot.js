@@ -17,17 +17,6 @@ client.on('message', async message => {
 //NjczMDcwODcyNTc1MjEzNTg4.XnV5hQ.ox2BdDXevIYElyvzpWVLS7dL0eM
 	// ...
 });  
-myEmitter.setMaxListeners(603);
-const app = express();
-app.use(keepalive);
-  
-app.get('/', (req, res) => {
-res.json('I have AIDS 😊');
-});
-app.get("/", (request, response) => {
-response.sendStatus(200);
-});
-app.listen(process.env.PORT);
 /**
  * The ready event is vital, it means that only _after_ this will your bot start reacting to information
  * received from Discord
